@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>My Personal Portfolio</title>
+  </head>
+  <body>
+
+   
+<header class="container">
+    <div class="row"> 
+        <h1 class="col-sm-6 "> Holiday Story</h1>
+        <nav class="col-sm-6 text-right">
+            <a href="index.html">Home</a>
+           <a href="about.html">About Me</a>
+           <a href="country.html">Country</a>
+         </nav>
+     </div>
+    </header>
+    <section class="jumbotron ">
+       
+         <input type="file" id="real-file" hidden="hidden" />
+         <button type="button" id="custom-button">upload photo</button>
+         <span id="custom-text">No file chosen, yet.</span>
+
+           <script type="text/javascript">
+        
+            const realFileBtn = document.getElementById("real-file");
+            const customBtn = document.getElementById("custom-button");
+            const customTxt = document.getElementById("custom-text");
+            
+            customBtn.addEventListener("click", function() {
+              realFileBtn.click();
+            });
+            
+            realFileBtn.addEventListener("change", function() {
+              if (realFileBtn.value) {
+                customTxt.innerHTML = realFileBtn.value.match(
+                  /[\/\\]([\w\d\s\.\-\(\)]+)$/
+                )[1];
+              } else {
+                customTxt.innerHTML = "No file chosen, yet.";
+              }
+            });
+           </script>
+   
+        
+
+<section class="extra-info">
+    <label for="extra">Anything else you want to add?</label>
+    <br>
+    <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+  </section>
+
+  <hr>
+  <section class="submission">
+    <input type="submit" value="Submit">
+  </section>
+    
+</section>
+
+<div class="container">
+    <div class="row">
+      
+      </div>
+</div> 
+    <section class="container">
+    <div class="row justify-content-center">
+      <div class="col_sm-6 ">
+        
+      </div>
+    </div>
+</section>
+    
+<footer class="container">
+    <div class="row">
+      <p>&copy; Broadway 2017</p>
+      <div class="col-sm-2">
+         <a href="https://www.facebook.com/MyHolidaySocial/" target="_blank">facebook</a>
+      </div>
+
+      <div class="col-sm-2">
+          <a href="https://twitter.com/dumitruseptimi1" target="_blank">twitter</a>
+      </div>
+
+      <div class="col-sm-2">
+        <a href="https://www.linkedin.com/myholidays?trk=biz-companies-cym" target="_blank">LinkedIn</a>
+      </div>
+
+      <div class="col-sm-2">
+        <a href="https://www.instagram.com/myholidaysocial/" target="_blank">instagram</a>
+      </div> 
+      
+      <div class="contactus">
+        <span id="us">CONTACT US</span>
+              <br>
+               For general enquiries email:
+              <br>
+       
+        <a href="mailto:dumitruseptimius@gmail.com" >dumitruseptimius@gmail.com</a>
+
+      </div>
+
+    </div>
+
+
+
+    
+</footer>
+
+  </body>
+</html>

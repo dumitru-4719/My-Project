@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Personal Portfolio</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="script.js">
+   
+    </script>
+    <body>
+        
+        <section class="overlay">
+          <h1>Log In</h1>
+          <p>Create an account:</p>
+          <form action="submission.html" method="GET">
+            <label for="username">Username:</label>
+            <br>
+            <input id="username" name="username" type="text" required minlength="3" maxlength="15">
+            <br>
+            <label for="pw">Password:</label>
+            <br>
+            <!--Add the pattern attribute to the input below-->
+            <input id="pw" name="pw" type="password" required minlength="8" maxlength="15">
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </section>
+    </body>
+ </head>
